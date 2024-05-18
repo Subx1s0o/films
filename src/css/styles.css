@@ -41,8 +41,8 @@ header .container {
   margin-top: 35px;
   display: flex;
   flex-wrap: wrap;
-
   gap: 80px 30px;
+  margin-bottom: 50px;
 }
 .input {
   background-color: transparent;
