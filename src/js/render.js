@@ -1,5 +1,6 @@
+import svg from '../img/symbol-defs.svg';
+
 function renderCards(data, list) {
-  console.log(data);
   const films = data.Search;
   let li = '';
   films.forEach(film => {
@@ -15,7 +16,7 @@ function renderCards(data, list) {
                     <p class="card-rating">
                       ${getRandomInt}/10
                       <svg width="25" height="25">
-                        <use href="./src/img/symbol-defs.svg#icon-star"></use>
+                        <use href="${svg}#icon-star"></use>
                       </svg>
                     </p>
                   </div>

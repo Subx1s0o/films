@@ -1,18 +1,5 @@
-// const films = fetch("http://www.omdbapi.com/?i=tt3896198&apikey=e9dc5fd8")
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .catch((error) => {
-//     console.log(new Error("Не вдалося отримати дані з запиту", error));
-//   });
-
-// films
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((error) => console.log(error));
-import filmsAPi from './src/js/fetch.js';
-import renderCards from './src/js/render.js';
+import filmsAPi from './js/fetch.js';
+import renderCards from './js/render.js';
 
 const totalSearch = document.querySelector('.totalSearch span');
 const input = document.querySelector('.input');
