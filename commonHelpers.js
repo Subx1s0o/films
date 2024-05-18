@@ -9,7 +9,7 @@ import{a as p}from"./assets/vendor-34f890c2.js";(function(){const s=document.cre
                     <p class="card-rating">
                       ${t}/10
                       <svg width="25" height="25">
-                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                        <use href="./src/img/symbol-defs.svg#icon-star"></use>
                       </svg>
                     </p>
                   </div>
