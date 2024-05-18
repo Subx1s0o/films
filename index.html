@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" crossorigin src="/films/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/films/assets/vendor-34f890c2.js">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="">WorldFilms</a>
+        <div class="search">
+          <form class="form">
+            <input
+              placeholder="Search your film..."
+              class="input"
+              type="text"
+            />
+            <span class="search-icon">
+              <svg width="25" height="25">
+                <use href="/films/assets/symbol-defs-17ad804a.svg#icon-search"></use>
+              </svg>
+            </span>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <p class="totalSearch">Total: <span></span></p>
+          <div class="loader"></div>
+          <ul class="list"></ul>
+          <div class="errormsg"></div>
+        </div>
+      </section>
+    </main>
+    
+  </body>
+</html>
