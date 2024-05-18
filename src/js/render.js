@@ -1,8 +1,8 @@
 function renderCards(data, list) {
   console.log(data);
   const films = data.Search;
-  let li = "";
-  films.forEach((film) => {
+  let li = '';
+  films.forEach(film => {
     const getRandomInt = Math.ceil(Math.random() * (10 - 5) + 5);
     li += `<li class="card" data-id="${film.imdbID}">
               <a href="#" >
@@ -15,7 +15,7 @@ function renderCards(data, list) {
                     <p class="card-rating">
                       ${getRandomInt}/10
                       <svg width="25" height="25">
-                        <use href="./img/symbol-defs.svg#icon-star"></use>
+                        <use href="./src/img/symbol-defs.svg#icon-star"></use>
                       </svg>
                     </p>
                   </div>
@@ -37,7 +37,7 @@ function renderCards(data, list) {
             </li>`;
   });
 
-  list.insertAdjacentHTML("beforeend", li);
+  list.insertAdjacentHTML('beforeend', li);
 }
 
 export default renderCards;
